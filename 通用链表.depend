@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1556095683 source:d:\programs\cb\通用链表\main.c
+	<stdio.h>
+	<assert.h>
+	"List.h"
+
+1556111420 d:\programs\cb\通用链表\list.h
+
+1556111428 source:d:\programs\cb\通用链表\list.c
+	"List.h"
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+
