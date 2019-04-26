@@ -77,7 +77,7 @@ void _ListDestroy(PNode pHead, int offset)
 	pHead->pNext = NULL;
 }
 
-int  _ListSearch(const PNode pHead, int offset, int dataSize, IsTarget isTarget, void* pRes)
+int  _ListNodeExist(const PNode pHead, int offset, int dataSize, IsTarget isTarget, void* pRes)
 {
 	PNode p = pHead->pNext;
 	while (p != NULL)
@@ -96,7 +96,44 @@ int  _ListSearch(const PNode pHead, int offset, int dataSize, IsTarget isTarget,
 	return 0;
 }
 
-int  _ListSearchIndexOf(const PNode pHead, int offset, int dataSize, int index, void* pRes)
+int _ListNodeCount(const PNode pHead, int offset, IsTarget isTarget)
+{
+	PNode p = pHead->pNext;
+	int cnt = 0;
+	while (p != NULL)
+	{
+		void* pData = (void*)((int)p - offset);
+		if (isTarget(pData))
+		{
+			cnt++;
+		}
+		p = p->pNext;
+	}
+	return cnt;
+}
+
+int _ListSearch(const PNode pHead, int offset, int dataSize, IsTarget isTarget, void * pRes)
+{
+	PNode p = pHead->pNext;
+	int cnt = 0;
+	while (p != NULL)
+	{
+		void* pData = (void*)((int)p - offset);
+		if (isTarget(pData))
+		{
+			cnt++;
+			if (pRes != NULL)
+			{
+				memcpy(pRes, pData, dataSize);
+				pRes = (void*)((int)pRes + dataSize);
+			}
+		}
+		p = p->pNext;
+	}
+	return cnt;
+}
+
+int  _ListIndexOf(const PNode pHead, int offset, int dataSize, int index, void* pRes)
 {
 	if (index < 0)
 	{
@@ -133,23 +170,27 @@ int  _ListSearchIndexOf(const PNode pHead, int offset, int dataSize, int index, 
 int  _ListDelete(PNode pHead, int offset, int dataSize, IsTarget isTarget, void* pRes)
 {
 	PNode p1 = pHead, p2 = pHead->pNext;
+	int cnt = 0;
 	while (p2 != NULL)
 	{
 		void* pData = (void*)((int)p2 - offset);
 		if (isTarget(pData))
 		{
+			cnt++;
 			if (pRes != NULL)
 			{
 				memcpy(pRes, pData, dataSize);
+				pRes = (void*)((int)pRes + dataSize);
 			}
 			p1->pNext = p2->pNext;
+			p2 = p1->pNext;
 			free(pData);
-			return 1;
+			continue;
 		}
 		p1 = p2;
 		p2 = p2->pNext;
 	}
-	return 0;
+	return cnt;
 }
 
 int  _ListDeleteIndexOf(PNode pHead, int offset, int dataSize, int index, void* pRes)
@@ -210,7 +251,6 @@ void _ListSort(const PNode pHead, int offset, int dataSize, LessThan lessthan)
 	}
 }
 
-//在第index个节点之前插入，即插入后该节点的下标为index
 int  _ListInsert(PNode pHead, int offset, int dataSize, int index, const void* pData)
 {
 	if (index < 0)
