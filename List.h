@@ -10,6 +10,9 @@ typedef struct Node
 	struct Node* pNext;
 }Node, *PNode;
 
+typedef Node List;
+typedef PNode PList;
+
 /*定义函数指针别名*/
 typedef void(*Proc)(const void*);
 typedef void(*Update)(void*);
@@ -145,7 +148,7 @@ typedef int(*BiggerThan)(const void*, const void*);
     (pRes))
 
 /*
-	链表排序
+	链表升序排序
 	pStructHead: 作为头节点的结构体地址
 	listMember: 链表成员名称
 	lessthan: 判断两个节点数据小于关系的函数指针

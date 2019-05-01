@@ -1,56 +1,56 @@
-all students info:
+all person info:
 
-all students info:
+all person info:
 1003 17
 1002 18
 1005 20
 1001 18
 1004 20
 
-all students info:
+all person info:
 1001 18
 1002 18
 1003 17
 1004 20
 1005 20
 
-all students info:
+all person info:
 1005 20
 1004 20
 1003 17
 1002 18
 1001 18
 
-all students info:
+all person info:
 1005 20
 1004 20
 1003 17
 1002 18
 1001 18
 
-all students info:
+all person info:
 1005 20
 1004 20
 1003 17
 1001 18
 
-all students info:
+all person info:
 1004 20
 1003 17
 1001 18
 
-all students info:
+all person info:
 1004 20
 1003 17
 
-all students info:
+all person info:
 1004 20
 1003 17
 1005 20
 1002 18
 1001 18
 
-all students info:
+all person info:
 1010 15
 1004 20
 1003 17
@@ -58,7 +58,7 @@ all students info:
 1002 18
 1001 18
 
-all students info:
+all person info:
 1010 15
 1004 20
 1003 17
@@ -67,17 +67,7 @@ all students info:
 1001 18
 1011 20
 
-all students info:
-1010 15
-1004 20
-1003 17
-1008 16
-1005 20
-1002 18
-1001 18
-1011 20
-
-all students info:
+all person info:
 1010 15
 1004 20
 1003 17
@@ -87,89 +77,99 @@ all students info:
 1001 18
 1011 20
 
-1010 15
-all students info:
-1004 20
-1003 17
-1008 16
-1005 20
-1002 18
-1001 18
-1011 20
-
-all students info:
-1004 20
-1003 17
-1008 16
-1005 20
-1002 18
-1001 18
-
-all students info:
-1004 20
-1003 17
-1008 16
-1002 18
-1001 18
-
-all students info:
-1001 18
-1002 18
-1003 17
-1004 20
-1008 16
-
-all students info:
-1008 16
-1004 20
-1003 17
-1002 18
-1001 18
-
-all students info:
-1008 16
-1004 20
-1003 17
-
-all students info:
-1011 20
-1008 16
-1004 20
-1003 17
-
-all students info:
-1008 16
-1003 17
-
-all students info:
-1008 16
-1005 20
-1004 20
-1011 20
-1003 17
-
-all students info:
-1008 16
-1003 17
-
-all students info:
-1003 17
-1008 16
-
-all students info:
-1003 17
-1011 20
-1008 16
-1005 20
+all person info:
 1010 15
 1004 20
+1003 17
+1008 16
+1005 20
+1002 18
+1001 18
+1011 20
+
+1010 15
+all person info:
+1004 20
+1003 17
+1008 16
+1005 20
+1002 18
+1001 18
+1011 20
+
+all person info:
+1004 20
+1003 17
+1008 16
+1005 20
+1002 18
 1001 18
 
-all students info:
+all person info:
+1004 20
+1003 17
+1008 16
+1002 18
+1001 18
+
+all person info:
+1001 18
+1002 18
+1003 17
+1004 20
+1008 16
+
+all person info:
+1008 16
+1004 20
+1003 17
+1002 18
+1001 18
+
+all person info:
+1008 16
+1004 20
+1003 17
+
+all person info:
+1011 20
+1008 16
+1004 20
+1003 17
+
+all person info:
+1008 16
+1003 17
+
+all person info:
+1008 16
+1005 20
+1004 20
+1011 20
+1003 17
+
+all person info:
+1008 16
+1003 17
+
+all person info:
+1003 17
+1008 16
+
+all person info:
+1003 17
+1011 20
+1008 16
+1005 20
+1010 15
+1004 20
+1001 18
+
+all person info:
 1003 17
 1008 16
 1010 15
 1001 18
 
-all students info:
+all person info:
 
