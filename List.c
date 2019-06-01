@@ -25,7 +25,7 @@ void _SwapData(void* pData1, void* pData2, int dataSize, int offset)
 	}
 }
 
-void _ListCreate(PNode pHead, int offset)
+void _ListCreate(PNode pHead)
 {
 	pHead->pNext = NULL;
 }

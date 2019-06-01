@@ -21,13 +21,13 @@ typedef int(*LessThan)(const void*, const void*);
 typedef int(*Equal)(const void*, const void*);
 typedef int(*BiggerThan)(const void*, const void*);
 
-//获取结构体成员的地址
+/*获取结构体成员的地址*/
 #define MemberAddr(pStruct, member) (&(pStruct)->member)
 
-//获取结构体大小
+/*获取结构体大小*/
 #define StructSize(pStruct) (sizeof(*(pStruct)))
 
-//获取结构体成员偏移量
+/*获取结构体成员偏移量*/
 #define StructMemberOffset(pStruct, member) ((int)MemberAddr((pStruct), member) - (int)(pStruct))
 
 /*对外接口*/
@@ -39,8 +39,7 @@ typedef int(*BiggerThan)(const void*, const void*);
 */
 #define ListCreate(pStructHead, listMember) \
     _ListCreate( \
-    MemberAddr((pStructHead), listMember), \
-    StructMemberOffset((pStructHead), listMember))
+    MemberAddr((pStructHead), listMember))
 
 /*
 	追加节点
@@ -210,7 +209,7 @@ typedef int(*BiggerThan)(const void*, const void*);
 
 /*内部函数*/
 void _SwapData(void* pData1, void* pData2, int dataSize, int offset);
-void _ListCreate(PNode pHead, int offset);
+void _ListCreate(PNode pHead);
 void _ListAppend(PNode pHead, int offset, void* pData, int dataSize);
 int  _ListLength(const PNode pHead);
 void _ListTraverse(const PNode pHead, int offset, Proc op);
